@@ -3,7 +3,8 @@
 :root{
     --color-primario: #000000;
     --color-secundario: #f6f6f6;
-    --color-tercerario: #22D4FD;
+    --color-tercerario: linear-gradient(to right, #8A2BE2, #00BFFF);
+    --color-cuarto: #22D4FD;
     --color-hover-primario: #045f6b;
     --color-hover-secundario: #272727;
 
@@ -20,6 +21,9 @@ body {
     background-color: var(--color-primario);
     color: var(--color-secundario);
     box-sizing: border-box;
+    display: flex;
+    flex-direction: column;
+    min-height: 100vh;
 }
 
 .header{
@@ -35,12 +39,20 @@ body {
     font-family: var(--fuente-montserrat);
     font-size: 1.5rem;
     font-weight: 600;
-    color: var(--color-tercerario);
     text-decoration: none;
 }
 
 .header__menu__link:hover{
     color: var(--color-hover-primario);
+    transform: scale(1.05);
+}
+
+.texto-degradado{
+    background: var(--color-tercerario);
+    -webkit-background-clip: text;
+    -webkit-text-fill-color: transparent;
+    background-clip: text;
+    text-fill-color: transparent;
 }
 
 .presentacion{
@@ -49,6 +61,7 @@ body {
     align-items: center;
     justify-content: space-between;
     gap: 82px;
+    flex: 1;
 }
 
 .presentacion__contenido{
@@ -63,9 +76,6 @@ body {
     font-family: var(--fuente-krona);
 }
 
-.titulo-destacado{
-    color: var(--color-tercerario);
-}
 
 .presentacion__contenido__texto{
     font-size: 1.5rem;
@@ -74,7 +84,7 @@ body {
 
 .presentacion__contenido__texto a{
     text-decoration: none;
-    color: var(--color-tercerario);
+    color: var(--color-cuarto);
 }
 
 .presentacion__enlaces{
@@ -101,7 +111,7 @@ body {
     font-weight: 600;
     text-decoration: none;
     color: var(--color-secundario);
-    border: 2px solid var(--color-tercerario);
+    border: 2px solid var(--color-cuarto);
     display: flex;
     justify-content: center;
     gap: 10px;
@@ -117,7 +127,7 @@ body {
 }
 
 .footer{
-    background-color: var(--color-tercerario);
+    background: var(--color-tercerario);
     padding: 24px;
     color: var(--color-primario);
     text-align: center;
