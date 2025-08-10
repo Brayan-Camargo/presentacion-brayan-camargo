@@ -32,7 +32,7 @@ body {
 
 .header__menu{
     display: flex;
-    gap: 80px;    
+    gap: 40px;    
 }
 
 .header__menu__link{
@@ -79,6 +79,7 @@ body {
 .presentacion__contenido__texto{
     font-size: 1.5rem;
     font-family: var(--fuente-montserrat);
+    text-align: justify;
 }
 
 .presentacion__contenido__texto a{
@@ -142,12 +143,14 @@ body {
     }
 
     .header__menu{
+        text-align: center;
         justify-content: center;
+        gap: 20px;
     }
 
     .presentacion{
         flex-direction: column-reverse;
-        padding: 2%;
+        padding: 1%;
     }
     
     .presentacion__contenido{
@@ -155,6 +158,10 @@ body {
     }
 
     .presentacion__imagen{
-        width: 85%;
+        width: 90%;
+    }
+
+    .presentacion__enlaces__link{
+        padding: 8% 12%;
     }
 }
